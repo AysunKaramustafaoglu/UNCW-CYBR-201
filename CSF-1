@@ -1,0 +1,1300 @@
+<div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Driving Laws:</strong> You must follow speed limits, wear seatbelts, and have car insurance because these are legal requirements</li>
+                            <li><strong>Age Restrictions:</strong> Stores can't sell alcohol to people under 21, an<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Fundamentals Study Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2C5F7C 0%, #1a365d 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #1a365d;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h2 {
+            color: #FFD700;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.4em;
+            border-bottom: 2px solid #2C5F7C;
+            padding-bottom: 10px;
+        }
+
+        .nav-button {
+            display: block;
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0;
+            background: #2C5F7C;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .nav-button:hover {
+            background: #FFD700;
+            color: #1a365d;
+            transform: translateX(5px);
+        }
+
+        .nav-button.active {
+            background: #FFD700;
+            color: #1a365d;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 30px;
+            flex: 1;
+            background: white;
+            min-height: 100vh;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #2C5F7C, #1a365d);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #2C5F7C;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #1a365d;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 8px;
+        }
+
+        .definition {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #2C5F7C;
+        }
+
+        .importance {
+            background: #e6f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #FFD700;
+        }
+
+        .examples {
+            background: #f0f8f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #2C5F7C;
+        }
+
+        .quiz-container {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .quiz-question {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2C5F7C;
+        }
+
+        .quiz-options {
+            margin: 15px 0;
+        }
+
+        .quiz-option {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-option:hover {
+            border-color: #2C5F7C;
+            background: #f8f9fa;
+        }
+
+        .quiz-option.selected {
+            border-color: #FFD700;
+            background: #fff9e6;
+        }
+
+        .quiz-option.correct {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+
+        .quiz-option.incorrect {
+            border-color: #dc3545;
+            background: #f8d7da;
+        }
+
+        .quiz-button {
+            background: #2C5F7C;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: background 0.3s ease;
+        }
+
+        .quiz-button:hover {
+            background: #1a365d;
+        }
+
+        .quiz-result {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .quiz-result.good {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .quiz-result.average {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .quiz-result.poor {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f1b0b7;
+        }
+
+        .intro-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .intro-section h1 {
+            color: #1a365d;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #FFD700 0%, transparent 100%);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Study Guide</h2>
+            <button class="nav-button active" onclick="showSection('intro')">Introduction</button>
+            <button class="nav-button" onclick="showSection('confidentiality')">Confidentiality</button>
+            <button class="nav-button" onclick="showSection('integrity')">Integrity</button>
+            <button class="nav-button" onclick="showSection('availability')">Availability</button>
+            <button class="nav-button" onclick="showSection('access')">Access</button>
+            <button class="nav-button" onclick="showSection('authentication')">Authentication</button>
+            <button class="nav-button" onclick="showSection('authorization')">Authorization</button>
+            <button class="nav-button" onclick="showSection('nonrepudiation')">Non-repudiation</button>
+            <button class="nav-button" onclick="showSection('privacy')">Privacy</button>
+            <button class="nav-button" onclick="showSection('riskassessment')">Risk Assessment</button>
+            <button class="nav-button" onclick="showSection('riskmanagement')">Risk Management</button>
+            <button class="nav-button" onclick="showSection('lifecycle')">Security Life-cycle</button>
+            <button class="nav-button" onclick="showSection('legal')">Legal</button>
+            <button class="nav-button" onclick="showSection('ethics')">Ethics</button>
+            <button class="nav-button" onclick="showSection('quiz')">Interactive Quiz</button>
+        </div>
+
+        <div class="main-content">
+            <!-- Introduction Section -->
+            <div id="intro" class="content-section active">
+                <div class="intro-section">
+                    <h1>Cybersecurity Fundamentals</h1>
+                    <p>Welcome to your comprehensive study guide for cybersecurity fundamentals. This interactive guide will help you understand the core concepts that form the foundation of cybersecurity. Each section includes definitions, explanations of importance, real-world examples, and interactive elements to test your knowledge.</p>
+                    <p>Navigate through the concepts using the sidebar, and complete the quiz at the end to test your understanding!</p>
+                </div>
+            </div>
+
+            <!-- Confidentiality Section -->
+            <div id="confidentiality" class="content-section">
+                <div class="section-header">
+                    <h1>Confidentiality</h1>
+                    <p>The first pillar of the CIA Triad</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Confidentiality</strong> ensures that information is accessible only to those authorized to have access. It protects sensitive data from unauthorized disclosure and maintains privacy.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Data Protection:</strong> Prevents sensitive information from falling into wrong hands</li>
+                            <li><strong>Legal Compliance:</strong> Many regulations require confidentiality measures (HIPAA, GDPR)</li>
+                            <li><strong>Business Reputation:</strong> Data breaches can severely damage organizational trust</li>
+                            <li><strong>Competitive Advantage:</strong> Protects trade secrets and proprietary information</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Personal Banking:</strong> Your bank account balance should only be visible to you, not to other customers in line</li>
+                            <li><strong>Medical Records:</strong> Your doctor's notes about your health condition shouldn't be readable by the janitor or other patients</li>
+                            <li><strong>Social Media:</strong> Your private messages on Instagram should only be seen by you and the person you're messaging</li>
+                            <li><strong>University Grades:</strong> Your transcript should only be accessible to you, your professors, and authorized staff - not other students</li>
+                            <li><strong>Diary/Journal:</strong> Like keeping a personal diary locked so your siblings can't read your private thoughts</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>WiFi Snooping:</strong> A hacker at a coffee shop intercepts your unencrypted emails and reads your personal conversations</li>
+                            <li><strong>Data Breach:</strong> Your favorite online store gets hacked and criminals steal customer credit card information, including yours</li>
+                            <li><strong>Phishing Attack:</strong> You receive a fake email that looks like it's from your bank, asking you to "verify" your account details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integrity Section -->
+            <div id="integrity" class="content-section">
+                <div class="section-header">
+                    <h1>Integrity</h1>
+                    <p>Ensuring data accuracy and trustworthiness</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Integrity</strong> ensures that information and systems are accurate, complete, and have not been modified by unauthorized users. It maintains the trustworthiness and reliability of data throughout its lifecycle.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Data Accuracy:</strong> Ensures decisions are based on correct information</li>
+                            <li><strong>System Reliability:</strong> Prevents malicious modifications that could cause system failures</li>
+                            <li><strong>Trust:</strong> Maintains confidence in data and systems</li>
+                            <li><strong>Compliance:</strong> Many standards require data integrity measures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Text Messages:</strong> Making sure your text to a friend arrives exactly as you typed it, without being changed by someone else</li>
+                            <li><strong>Online Shopping:</strong> Ensuring the price of an item doesn't get altered from $50 to $500 while you're checking out</li>
+                            <li><strong>School Assignments:</strong> Your submitted essay should remain exactly as you wrote it, not modified by another student</li>
+                            <li><strong>Wikipedia Editing:</strong> When someone vandalizes a Wikipedia page, the system can detect and revert unauthorized changes</li>
+                            <li><strong>Photo Editing:</strong> Being able to tell if someone photoshopped your picture before sharing it online</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Man-in-the-Middle Attack:</strong> A hacker intercepts your online banking session and changes your $100 transfer to $1000 without you knowing</li>
+                            <li><strong>Malware Infection:</strong> A virus corrupts your computer files, making your important documents unreadable or altered</li>
+                            <li><strong>Database Tampering:</strong> Someone hacks into your university's system and changes grades in the student database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Availability Section -->
+            <div id="availability" class="content-section">
+                <div class="section-header">
+                    <h1>Availability</h1>
+                    <p>Ensuring systems and data are accessible when needed</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Availability</strong> ensures that information and systems are accessible and functional when needed by authorized users. It focuses on maintaining uptime and preventing service disruptions.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Business Continuity:</strong> Prevents financial losses from downtime</li>
+                            <li><strong>User Productivity:</strong> Ensures employees can access needed resources</li>
+                            <li><strong>Customer Satisfaction:</strong> Maintains service quality and reliability</li>
+                            <li><strong>Emergency Response:</strong> Critical systems must be available during crises</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Netflix Streaming:</strong> Being able to watch your favorite show whenever you want, without the service being down</li>
+                            <li><strong>ATM Machines:</strong> The ATM being operational when you need to withdraw cash for weekend plans</li>
+                            <li><strong>University Portal:</strong> Being able to register for classes during registration period, not getting locked out due to system crashes</li>
+                            <li><strong>Emergency Services:</strong> 911 systems must work 24/7, especially during natural disasters when you need help most</li>
+                            <li><strong>Social Media Apps:</strong> Instagram or TikTok being accessible when you want to post or check updates from friends</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>DDoS Attack:</strong> Hackers flood your favorite gaming server with fake traffic, making it impossible for you and other players to connect</li>
+                            <li><strong>Ransomware:</strong> Malicious software locks all the files on your computer and demands payment before you can access them again</li>
+                            <li><strong>Server Outage:</strong> Your online banking app goes down right when you need to transfer money for rent, leaving you unable to complete the transaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Access Section -->
+            <div id="access" class="content-section">
+                <div class="section-header">
+                    <h1>Access Control</h1>
+                    <p>Managing who can use systems and data</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Access Control</strong> is the process of granting or denying specific requests to obtain and use information and related information processing services. It determines who can access what resources under what circumstances.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Security Foundation:</strong> Forms the basis for implementing confidentiality</li>
+                            <li><strong>Risk Reduction:</strong> Limits potential damage from insider threats</li>
+                            <li><strong>Principle of Least Privilege:</strong> Users get minimum access needed for their role</li>
+                            <li><strong>Audit Trail:</strong> Tracks who accessed what and when</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Dorm Room Access:</strong> Only students with the right key card can enter specific dormitory buildings and floors</li>
+                            <li><strong>Library Resources:</strong> Students can access some online databases, but faculty get access to additional research materials</li>
+                            <li><strong>Gym Membership:</strong> Your student ID lets you into the campus gym, but doesn't give you access to the faculty fitness center</li>
+                            <li><strong>Parking Lots:</strong> Your parking permit allows you to park in student lots but not in faculty/staff reserved spaces</li>
+                            <li><strong>Age-Restricted Content:</strong> Being 18+ lets you watch R-rated movies, but you need to be 21+ to enter certain venues</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Network Firewall:</strong> Your university's WiFi blocks access to gaming websites during class hours but allows educational sites</li>
+                            <li><strong>VPN Restrictions:</strong> Your work laptop can only access company files when connected through the company's secure VPN</li>
+                            <li><strong>Privilege Escalation Attack:</strong> A hacker gains basic user access to a system, then exploits weaknesses to gain administrator privileges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Authentication Section -->
+            <div id="authentication" class="content-section">
+                <div class="section-header">
+                    <h1>Authentication</h1>
+                    <p>Verifying identity - "Who are you?"</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Authentication</strong> is the process of verifying the identity of a user, device, or system. It answers the question "Who are you?" and ensures that entities are who they claim to be.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Identity Verification:</strong> Prevents impersonation and unauthorized access</li>
+                            <li><strong>Accountability:</strong> Links actions to specific individuals</li>
+                            <li><strong>Foundation for Authorization:</strong> Must authenticate before authorizing access</li>
+                            <li><strong>Non-repudiation:</strong> Provides evidence of who performed actions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Smartphone Unlock:</strong> Using your face, fingerprint, or PIN to prove you're the phone's owner before accessing it</li>
+                            <li><strong>University Login:</strong> Entering your student ID and password to prove you're enrolled before accessing the course portal</li>
+                            <li><strong>Concert Entry:</strong> Showing your driver's license to prove you're the person named on the ticket</li>
+                            <li><strong>Bank Account:</strong> The ATM asking for your PIN after you insert your debit card to confirm you're the account holder</li>
+                            <li><strong>Social Media:</strong> Facebook asking for your password when you log in from a new device to verify it's really you</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Account Takeover:</strong> A hacker guesses your weak password and logs into your social media account, pretending to be you</li>
+                            <li><strong>Credential Stuffing:</strong> Cybercriminals use your leaked password from one site to try logging into your other accounts</li>
+                            <li><strong>SIM Swapping:</strong> A criminal tricks your phone company into transferring your phone number to their device to bypass two-factor authentication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Authorization Section -->
+            <div id="authorization" class="content-section">
+                <div class="section-header">
+                    <h1>Authorization</h1>
+                    <p>Determining permissions - "What can you do?"</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Authorization</strong> is the process of determining what permissions an authenticated user has. It answers the question "What are you allowed to do?" and controls access to specific resources and functions.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Granular Control:</strong> Provides fine-grained access control</li>
+                            <li><strong>Separation of Duties:</strong> Prevents any single user from having too much power</li>
+                            <li><strong>Data Protection:</strong> Ensures users only access appropriate information</li>
+                            <li><strong>Compliance:</strong> Meets regulatory requirements for access control</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Streaming Services:</strong> Netflix knows you're a subscriber (authentication), but your "Kids" profile can't watch R-rated content (authorization)</li>
+                            <li><strong>University System:</strong> After logging in as a student, you can view your own grades but not change them or see other students' grades</li>
+                            <li><strong>Social Media:</strong> Once logged into Instagram, you can post to your story, but you can't delete other people's posts</li>
+                            <li><strong>Shared Computer:</strong> In a computer lab, you can save files to your personal folder but not access or modify other students' folders</li>
+                            <li><strong>Gaming Platform:</strong> Your Xbox Live account lets you play online games, but doesn't give you admin powers to ban other players</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Insider Threat:</strong> An employee uses their legitimate access to steal customer data that they're not supposed to download</li>
+                            <li><strong>API Abuse:</strong> A mobile app requests permission to access your contacts but then uploads all your friends' phone numbers without telling you</li>
+                            <li><strong>Lateral Movement:</strong> A hacker gains access to one computer on a network, then uses that access to break into other systems they shouldn't reach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-repudiation Section -->
+            <div id="nonrepudiation" class="content-section">
+                <div class="section-header">
+                    <h1>Non-repudiation</h1>
+                    <p>Preventing denial of actions</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Non-repudiation</strong> ensures that a party cannot deny having performed a particular action or transaction. It provides proof of the origin, delivery, and integrity of data, preventing false denial of involvement.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Legal Evidence:</strong> Provides court-admissible proof of actions</li>
+                            <li><strong>Dispute Resolution:</strong> Settles disagreements about who did what</li>
+                            <li><strong>Accountability:</strong> Ensures individuals are responsible for their actions</li>
+                            <li><strong>Business Integrity:</strong> Maintains trust in electronic transactions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Online Shopping:</strong> When you buy something on Amazon, you can't later claim "I never made that purchase" because there's proof of your transaction</li>
+                            <li><strong>Email Communication:</strong> Your professor can prove you received their email about the exam date, so you can't claim you never got it</li>
+                            <li><strong>Text Messages:</strong> When you send a hurtful text, you can't deny sending it because the message history proves you did</li>
+                            <li><strong>Contract Signing:</strong> When you sign an apartment lease, you can't later claim you never agreed to the terms</li>
+                            <li><strong>Social Media Posts:</strong> You can't deny posting that embarrassing photo because it's timestamped and linked to your account</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Email Spoofing:</strong> Someone sends threatening emails that appear to come from your email address, but digital forensics can prove you didn't send them</li>
+                            <li><strong>Digital Evidence:</strong> In a cybercrime investigation, logs prove exactly which computer accessed illegal content and when</li>
+                            <li><strong>Cryptocurrency Fraud:</strong> A scammer claims they never received payment, but the blockchain permanently records that the transaction occurred</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Section -->
+            <div id="privacy" class="content-section">
+                <div class="section-header">
+                    <h1>Privacy</h1>
+                    <p>Protecting personal information and rights</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Privacy</strong> is the right of individuals to control how their personal information is collected, used, stored, and shared. It encompasses both the protection of personal data and the individual's right to determine their level of exposure.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Human Rights:</strong> Fundamental right to personal autonomy and dignity</li>
+                            <li><strong>Legal Compliance:</strong> Required by GDPR, CCPA, and other privacy laws</li>
+                            <li><strong>Trust Building:</strong> Customers trust organizations that protect their privacy</li>
+                            <li><strong>Risk Management:</strong> Prevents identity theft and personal harm</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Social Media Settings:</strong> Choosing who can see your Instagram posts - everyone, friends only, or just you</li>
+                            <li><strong>Location Sharing:</strong> Deciding whether apps like Uber can access your location, and turning it off when you don't want to be tracked</li>
+                            <li><strong>Online Shopping:</strong> Amazon asking if you want them to save your credit card info for future purchases - you get to choose</li>
+                            <li><strong>Dating Apps:</strong> Tinder only showing your first name and chosen photos, not your full name, address, or phone number</li>
+                            <li><strong>Browser Settings:</strong> Choosing to browse in "incognito mode" so your search history isn't saved or seen by others using the same computer</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Data Mining:</strong> Companies analyze your shopping habits, search history, and social media to create detailed profiles for targeted advertising</li>
+                            <li><strong>Identity Theft:</strong> Criminals piece together your personal information from various sources to open credit cards or loans in your name</li>
+                            <li><strong>Stalkerware:</strong> Someone secretly installs tracking software on your phone to monitor your location, calls, and messages without your knowledge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Assessment Section -->
+            <div id="riskassessment" class="content-section">
+                <div class="section-header">
+                    <h1>Risk Assessment</h1>
+                    <p>Identifying and evaluating potential threats</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Risk Assessment</strong> is the systematic process of identifying, analyzing, and evaluating potential security risks to an organization's information systems, assets, and operations. It determines the likelihood and impact of threats.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Informed Decision-Making:</strong> Provides data for security investment decisions</li>
+                            <li><strong>Resource Allocation:</strong> Prioritizes security efforts based on risk levels</li>
+                            <li><strong>Compliance:</strong> Required by many security frameworks and regulations</li>
+                            <li><strong>Proactive Security:</strong> Identifies vulnerabilities before they're exploited</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Planning a Road Trip:</strong> Before driving cross-country, you check for construction zones, weather risks, and plan alternate routes</li>
+                            <li><strong>Choosing Housing:</strong> Before renting an apartment, you research the neighborhood's crime rate, flood risk, and safety features</li>
+                            <li><strong>Financial Planning:</strong> Before investing money, you research the risk of losing your investment vs. potential gains</li>
+                            <li><strong>Social Media Posting:</strong> Thinking about what could go wrong before posting that photo - could it hurt your reputation or future job prospects?</li>
+                            <li><strong>Dating Safety:</strong> Before meeting someone from a dating app, you tell friends where you're going and meet in a public place</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Vulnerability Assessment:</strong> A company discovers their website has security flaws that could allow hackers to steal customer data</li>
+                            <li><strong>Penetration Testing:</strong> Ethical hackers are hired to attack a company's systems to find weaknesses before real criminals do</li>
+                            <li><strong>Threat Intelligence:</strong> Security teams monitor dark web forums to identify new types of malware targeting their industry</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Management Section -->
+            <div id="riskmanagement" class="content-section">
+                <div class="section-header">
+                    <h1>Risk Management</h1>
+                    <p>Addressing and mitigating identified risks</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Risk Management</strong> is the coordinated activities to direct and control an organization with regard to risk. It involves developing and implementing strategies to mitigate, transfer, accept, or avoid identified risks.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Business Continuity:</strong> Ensures operations continue despite security incidents</li>
+                            <li><strong>Cost Control:</strong> Balances security costs with potential losses</li>
+                            <li><strong>Strategic Planning:</strong> Integrates security into business decisions</li>
+                            <li><strong>Stakeholder Confidence:</strong> Demonstrates proactive security management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Car Insurance:</strong> You pay for car insurance to transfer the financial risk of accidents to the insurance company</li>
+                            <li><strong>Studying for Exams:</strong> You create a study schedule to reduce the risk of failing your midterm exam</li>
+                            <li><strong>Backing Up Photos:</strong> You save copies of important photos to cloud storage so you don't lose them if your phone breaks</li>
+                            <li><strong>Emergency Fund:</strong> You save money for unexpected expenses because you accept that emergencies will happen</li>
+                            <li><strong>Avoiding Risky Behavior:</strong> You choose not to walk alone in unsafe areas at night to avoid the risk of being mugged</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Cyber Insurance:</strong> A company purchases cyber insurance to cover costs if they suffer a data breach or ransomware attack</li>
+                            <li><strong>Security Patches:</strong> You install software updates immediately to reduce the risk of hackers exploiting known vulnerabilities</li>
+                            <li><strong>Air-Gapped Systems:</strong> A nuclear power plant keeps critical control systems completely disconnected from the internet to avoid cyber attacks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Life-cycle Section -->
+            <div id="lifecycle" class="content-section">
+                <div class="section-header">
+                    <h1>Security Life-cycle</h1>
+                    <p>Continuous security improvement process</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Security Life-cycle</strong> is a continuous process of planning, implementing, monitoring, and improving security measures throughout an organization. It ensures security evolves with changing threats and business needs.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Continuous Improvement:</strong> Security measures evolve with new threats</li>
+                            <li><strong>Systematic Approach:</strong> Ensures all security aspects are addressed</li>
+                            <li><strong>Cost Effectiveness:</strong> Optimizes security investments over time</li>
+                            <li><strong>Compliance Maintenance:</strong> Keeps security aligned with regulations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Personal Fitness:</strong> Plan your workout routine → Exercise regularly → Track your progress → Adjust your routine based on results</li>
+                            <li><strong>Academic Success:</strong> Set study goals → Attend classes and study → Monitor your grades → Change study methods if grades are poor</li>
+                            <li><strong>Home Security:</strong> Assess your home's vulnerabilities → Install locks and alarms → Check they're working → Upgrade when needed</li>
+                            <li><strong>Car Maintenance:</strong> Schedule regular check-ups → Get oil changes and tune-ups → Monitor warning lights → Fix problems before they get worse</li>
+                            <li><strong>Social Media Presence:</strong> Plan what image you want online → Post appropriate content → Monitor your digital reputation → Clean up old posts that might hurt you</li>
+                        </ul>
+                        <h4 style="color: #2C5F7C; margin-top: 20px;">Cybersecurity Scenarios:</h4>
+                        <ul>
+                            <li><strong>Security Operations Center:</strong> A team continuously monitors network traffic, investigates alerts, and updates defenses based on new threats</li>
+                            <li><strong>Incident Response:</strong> When a company detects a breach, they follow established procedures to contain damage, investigate, and prevent future attacks</li>
+                            <li><strong>Security Audits:</strong> Organizations regularly review their security measures, identify gaps, and implement improvements to stay ahead of evolving threats</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Section -->
+            <div id="legal" class="content-section">
+                <div class="section-header">
+                    <h1>Legal Aspects</h1>
+                    <p>Laws and regulations governing cybersecurity</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Legal aspects</strong> in cybersecurity refer to the laws, regulations, standards, and legal frameworks that govern how organizations must protect information and respond to security incidents. This includes compliance requirements and legal consequences.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Regulatory Compliance:</strong> Avoiding fines and legal penalties</li>
+                            <li><strong>Industry Standards:</strong> Meeting sector-specific requirements</li>
+                            <li><strong>Liability Protection:</strong> Reducing legal exposure from data breaches</li>
+                            <li><strong>International Operations:</strong> Navigating different countries' laws</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Driving Laws:</strong> You must follow speed limits, wear seatbelts, and have car insurance because these are legal requirements</li>
+                            <li><strong>Age Restrictions:</strong> Stores can't sell alcohol to people under 21, and websites must verify age before showing adult content</li>
+                            <li><strong>Student Records:</strong> Universities must protect your grades and personal information under FERPA law</li>
+                            <li><strong>Healthcare Privacy:</strong> Your doctor can't share your medical information with your parents (if you're 18+) without your permission</li>
+                            <li><strong>Employment Background Checks:</strong> Employers must follow specific laws about what they can ask and how they can use criminal history information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ethics Section -->
+            <div id="ethics" class="content-section">
+                <div class="section-header">
+                    <h1>Ethics in Cybersecurity</h1>
+                    <p>Moral principles and professional conduct</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Definition</h3>
+                    <div class="definition">
+                        <p><strong>Ethics in cybersecurity</strong> involves the moral principles and professional standards that guide the behavior of cybersecurity professionals. It encompasses doing the right thing even when no one is watching and balancing security needs with individual rights.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Importance</h3>
+                    <div class="importance">
+                        <ul>
+                            <li><strong>Professional Integrity:</strong> Maintains trust in the cybersecurity profession</li>
+                            <li><strong>Stakeholder Protection:</strong> Ensures decisions consider all affected parties</li>
+                            <li><strong>Moral Guidance:</strong> Provides framework for difficult decisions</li>
+                            <li><strong>Public Trust:</strong> Builds confidence in digital systems and services</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Real-Life Examples</h3>
+                    <div class="examples">
+                        <ul>
+                            <li><strong>Found Wallet:</strong> You find someone's wallet with cash and credit cards - the ethical choice is to return it, not keep the money</li>
+                            <li><strong>Cheating on Exams:</strong> Even if you could easily cheat without getting caught, academic integrity means doing your own work</li>
+                            <li><strong>Social Media Bullying:</strong> Just because you can post mean comments anonymously doesn't mean you should - consider the harm to others</li>
+                            <li><strong>Sharing Netflix Password:</strong> Even though it's common, sharing your account violates terms of service and could be considered theft of services</li>
+                            <li><strong>Privacy of Others:</strong> If you accidentally see someone's private text messages on their unlocked phone, the ethical thing is to look away, not read them</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Section -->
+            <div id="quiz" class="content-section">
+                <div class="section-header">
+                    <h1>Interactive Quiz</h1>
+                    <p>Test your knowledge of cybersecurity fundamentals</p>
+                </div>
+                
+                <div class="quiz-container">
+                    <div id="quiz-content">
+                        <div class="quiz-question">
+                            <h3>Question 1 of 10</h3>
+                            <p>Which component of the CIA Triad ensures that information is accessible only to authorized users?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="a"> Availability
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="b"> Integrity
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="c"> Confidentiality
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="d"> Access Control
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 2 of 10</h3>
+                            <p>What is the primary purpose of authentication?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q2" value="a"> To determine what a user can access
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q2" value="b"> To verify who the user claims to be
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q2" value="c"> To prevent users from denying their actions
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q2" value="d"> To protect user privacy
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 3 of 10</h3>
+                            <p>Which risk management strategy involves purchasing cyber insurance?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q3" value="a"> Risk Mitigation
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q3" value="b"> Risk Avoidance
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q3" value="c"> Risk Transfer
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q3" value="d"> Risk Acceptance
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 4 of 10</h3>
+                            <p>What does non-repudiation prevent?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q4" value="a"> Unauthorized access to systems
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q4" value="b"> Data corruption during transmission
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q4" value="c"> Users from denying they performed an action
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q4" value="d"> Systems from being available
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 5 of 10</h3>
+                            <p>Which is an example of something you ARE in authentication?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q5" value="a"> Password
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q5" value="b"> Smart card
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q5" value="c"> Fingerprint
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q5" value="d"> Security token
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 6 of 10</h3>
+                            <p>What is the main difference between confidentiality and privacy?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q6" value="a"> They are the same concept
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q6" value="b"> Privacy focuses on individual rights, confidentiality on data protection
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q6" value="c"> Confidentiality is legal, privacy is technical
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q6" value="d"> Privacy only applies to personal data
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 7 of 10</h3>
+                            <p>Which phase comes first in the security life-cycle?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q7" value="a"> Implement
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q7" value="b"> Monitor
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q7" value="c"> Plan
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q7" value="d"> Review
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 8 of 10</h3>
+                            <p>What is the primary purpose of a risk assessment?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q8" value="a"> To eliminate all security risks
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q8" value="b"> To identify and evaluate potential threats
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q8" value="c"> To purchase security software
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q8" value="d"> To train employees
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 9 of 10</h3>
+                            <p>Which regulation primarily governs healthcare data privacy in the US?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q9" value="a"> GDPR
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q9" value="b"> CCPA
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q9" value="c"> HIPAA
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q9" value="d"> SOX
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question" style="display: none;">
+                            <h3>Question 10 of 10</h3>
+                            <p>What is responsible disclosure in cybersecurity ethics?</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q10" value="a"> Publicly announcing all vulnerabilities immediately
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q10" value="b"> Reporting vulnerabilities to vendors before public release
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q10" value="c"> Selling vulnerability information to the highest bidder
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q10" value="d"> Keeping all vulnerabilities secret
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-controls">
+                        <button class="quiz-button" onclick="nextQuestion()">Next Question</button>
+                        <button class="quiz-button" onclick="previousQuestion()" style="display: none;">Previous Question</button>
+                        <button class="quiz-button" onclick="submitQuiz()" style="display: none;">Submit Quiz</button>
+                        <button class="quiz-button" onclick="restartQuiz()" style="display: none;">Restart Quiz</button>
+                    </div>
+
+                    <div id="quiz-result" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentQuestion = 0;
+        let quizAnswers = {};
+        const correctAnswers = {
+            q1: 'c', q2: 'b', q3: 'c', q4: 'c', q5: 'c',
+            q6: 'b', q7: 'c', q8: 'b', q9: 'c', q10: 'b'
+        };
+
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all nav buttons
+            const navButtons = document.querySelectorAll('.nav-button');
+            navButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        function nextQuestion() {
+            const questions = document.querySelectorAll('.quiz-question');
+            const currentQ = questions[currentQuestion];
+            
+            // Save current answer
+            const selectedOption = currentQ.querySelector('input[type="radio"]:checked');
+            if (selectedOption) {
+                quizAnswers[selectedOption.name] = selectedOption.value;
+            }
+
+            // Hide current question
+            currentQ.style.display = 'none';
+
+            // Show next question or results
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                questions[currentQuestion].style.display = 'block';
+                
+                // Show previous button
+                document.querySelector('button[onclick="previousQuestion()"]').style.display = 'inline-block';
+                
+                // Show submit button on last question
+                if (currentQuestion === questions.length - 1) {
+                    document.querySelector('button[onclick="nextQuestion()"]').style.display = 'none';
+                    document.querySelector('button[onclick="submitQuiz()"]').style.display = 'inline-block';
+                }
+            }
+        }
+
+        function previousQuestion() {
+            const questions = document.querySelectorAll('.quiz-question');
+            
+            // Hide current question
+            questions[currentQuestion].style.display = 'none';
+            
+            // Show previous question
+            currentQuestion--;
+            questions[currentQuestion].style.display = 'block';
+            
+            // Restore saved answer
+            const questionName = 'q' + (currentQuestion + 1);
+            if (quizAnswers[questionName]) {
+                const savedOption = questions[currentQuestion].querySelector(`input[value="${quizAnswers[questionName]}"]`);
+                if (savedOption) {
+                    savedOption.checked = true;
+                }
+            }
+            
+            // Hide previous button if on first question
+            if (currentQuestion === 0) {
+                document.querySelector('button[onclick="previousQuestion()"]').style.display = 'none';
+            }
+            
+            // Show next button and hide submit button
+            document.querySelector('button[onclick="nextQuestion()"]').style.display = 'inline-block';
+            document.querySelector('button[onclick="submitQuiz()"]').style.display = 'none';
+        }
+
+        function submitQuiz() {
+            // Save final answer
+            const questions = document.querySelectorAll('.quiz-question');
+            const currentQ = questions[currentQuestion];
+            const selectedOption = currentQ.querySelector('input[type="radio"]:checked');
+            if (selectedOption) {
+                quizAnswers[selectedOption.name] = selectedOption.value;
+            }
+
+            // Calculate score
+            let correct = 0;
+            const total = Object.keys(correctAnswers).length;
+            
+            for (let question in correctAnswers) {
+                if (quizAnswers[question] === correctAnswers[question]) {
+                    correct++;
+                }
+            }
+
+            const percentage = Math.round((correct / total) * 100);
+
+            // Hide quiz questions and controls
+            document.getElementById('quiz-content').style.display = 'none';
+            document.querySelector('.quiz-controls').style.display = 'none';
+
+            // Show results
+            const resultDiv = document.getElementById('quiz-result');
+            let resultClass = 'poor';
+            let message = 'Keep studying! Review the concepts and try again.';
+            
+            if (percentage >= 80) {
+                resultClass = 'good';
+                message = 'Excellent work! You have a solid understanding of cybersecurity fundamentals.';
+            } else if (percentage >= 60) {
+                resultClass = 'average';
+                message = 'Good job! Review the areas you missed and strengthen your knowledge.';
+            }
+
+            resultDiv.innerHTML = `
+                <div class="quiz-result ${resultClass}">
+                    <h3>Quiz Complete!</h3>
+                    <p>You scored ${correct} out of ${total} questions correct (${percentage}%)</p>
+                    <p>${message}</p>
+                    <button class="quiz-button" onclick="restartQuiz()">Take Quiz Again</button>
+                </div>
+            `;
+            resultDiv.style.display = 'block';
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            quizAnswers = {};
+            
+            // Reset all questions
+            const questions = document.querySelectorAll('.quiz-question');
+            questions.forEach((question, index) => {
+                question.style.display = index === 0 ? 'block' : 'none';
+                // Clear all radio buttons
+                const radios = question.querySelectorAll('input[type="radio"]');
+                radios.forEach(radio => radio.checked = false);
+            });
+
+            // Reset controls
+            document.querySelector('button[onclick="nextQuestion()"]').style.display = 'inline-block';
+            document.querySelector('button[onclick="previousQuestion()"]').style.display = 'none';
+            document.querySelector('button[onclick="submitQuiz()"]').style.display = 'none';
+            
+            // Show quiz content and hide results
+            document.getElementById('quiz-content').style.display = 'block';
+            document.querySelector('.quiz-controls').style.display = 'block';
+            document.getElementById('quiz-result').style.display = 'none';
+        }
+
+        // Add click handlers for quiz options
+        document.addEventListener('DOMContentLoaded', function() {
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach(option => {
+                option.addEventListener('click', function() {
+                    const radio = this.querySelector('input[type="radio"]');
+                    radio.checked = true;
+                    
+                    // Remove selected class from siblings
+                    const siblings = this.parentNode.querySelectorAll('.quiz-option');
+                    siblings.forEach(sibling => sibling.classList.remove('selected'));
+                    
+                    // Add selected class to this option
+                    this.classList.add('selected');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
